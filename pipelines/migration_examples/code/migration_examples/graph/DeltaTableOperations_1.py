@@ -1,0 +1,12 @@
+from pyspark.sql import *
+from pyspark.sql.functions import *
+from pyspark.sql.types import *
+from prophecy.utils import *
+from prophecy.libs import typed_lit
+from migration_examples.config.ConfigStore import *
+from migration_examples.udfs.UDFs import *
+
+def DeltaTableOperations_1(spark: SparkSession):
+    if not ("SColumnExpression" in locals()):
+        from delta.tables import DeltaTable
+        DeltaTable.forName(spark, "rainforest_silver.test_campaign_base").restoreToVersion(0)
