@@ -1,13 +1,13 @@
 from setuptools import setup, find_packages
 setup(
-    name = 'silver_fct_tables',
+    name = 'demo_silver_fct_tables',
     version = '1.0',
     packages = find_packages(include = ('silver_fct_tables*', )) + ['prophecy_config_instances'],
     package_dir = {'prophecy_config_instances' : 'configs/resources/config'},
     package_data = {'prophecy_config_instances' : ['*.json', '*.py', '*.conf']},
     description = 'workflow',
     install_requires = [
-'prophecy-libs==1.7.3'],
+'prophecy-libs==1.7.4'],
     entry_points = {
 'console_scripts' : [
 'main = silver_fct_tables.pipeline:main'], },

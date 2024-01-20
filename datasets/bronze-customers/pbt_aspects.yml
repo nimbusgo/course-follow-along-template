@@ -32,14 +32,14 @@ schema:
       tags: []
   - name: is_original
     type: boolean
-    nullable: true
+    nullable: false
     metadata:
       description: ''
       mappings: []
       tags: []
   - name: is_current
     type: boolean
-    nullable: true
+    nullable: false
     metadata:
       description: ''
       mappings: []

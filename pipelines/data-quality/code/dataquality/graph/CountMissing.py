@@ -7,4 +7,4 @@ from dataquality.config.ConfigStore import *
 from dataquality.udfs.UDFs import *
 
 def CountMissing(spark: SparkSession, in0: DataFrame) -> DataFrame:
-    return in0.select(sum(expr("if(isnull(customer_customer_id), 1, 0)")).alias("missing_customer_id_count"))
+    return in0.select(sum(expr("if((customer_customer_id IS NULL), 1, 0)")).alias("missing_customer_id_count"))

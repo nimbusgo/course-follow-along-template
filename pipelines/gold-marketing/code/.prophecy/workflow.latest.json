@@ -9,7 +9,7 @@
     "id" : "1",
     "uri" : "pipelines/gold-marketing",
     "language" : "python",
-    "fabricId" : "7425",
+    "fabricId" : "1174",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {

@@ -12,7 +12,7 @@ buildSystemDetails:
   createdAt: '2023-10-10 21:05:12'
 pipelines:
   pipelines/retail-example:
-    name: retail-example
+    name: demo_retail-example
     description: ''
     author: nimbus@prophecy.io
     mode: batch
@@ -29,7 +29,7 @@ pipelines:
     subgraphs: []
     dependencies: {}
   pipelines/bulk-load-bronze-example:
-    name: bulk-load-bronze-example
+    name: demo_bulk-load-bronze-example
     description: ''
     author: nimbus@prophecy.io
     mode: batch
@@ -48,7 +48,7 @@ pipelines:
     subgraphs: []
     dependencies: {}
   pipelines/incremental-load-bronze-example:
-    name: incremental-load-bronze-example
+    name: demo_incremental-load-bronze-example
     description: ''
     author: nimbus@prophecy.io
     mode: batch
@@ -68,21 +68,8 @@ pipelines:
       - datasets/bronze-sales-increment
     subgraphs: []
     dependencies: {}
-  pipelines/bronze-sales:
-    name: bronze-sales
-    description: ''
-    author: nimbus@prophecy.io
-    mode: batch
-    artefactID: ''
-    language: python
-    createdAt: '2023-11-16 22:47:51'
-    datasets:
-      inputs: []
-      outputs: []
-    subgraphs: []
-    dependencies: {}
   pipelines/silver_fct_tables:
-    name: silver_fct_tables
+    name: demo_silver_fct_tables
     description: ''
     author: nimbus@prophecy.io
     mode: batch
@@ -100,7 +87,7 @@ pipelines:
     subgraphs: []
     dependencies: {}
   pipelines/gold-sales-reports:
-    name: gold-sales-reports
+    name: demo_gold-sales-reports
     description: ''
     author: nimbus@prophecy.io
     mode: batch
@@ -120,7 +107,7 @@ pipelines:
     - subgraphs/Top10Sales
     dependencies: {}
   pipelines/bronze-marketing:
-    name: bronze-marketing
+    name: demo_bronze-marketing
     description: ''
     author: nimbus@prophecy.io
     mode: batch
@@ -137,7 +124,7 @@ pipelines:
     subgraphs: []
     dependencies: {}
   pipelines/silver-marketing:
-    name: silver-marketing
+    name: demo_silver-marketing
     description: ''
     author: nimbus@prophecy.io
     mode: batch
@@ -154,7 +141,7 @@ pipelines:
     subgraphs: []
     dependencies: {}
   pipelines/gold-marketing:
-    name: gold-marketing
+    name: demo_gold-marketing
     description: ''
     author: nimbus@prophecy.io
     mode: batch
@@ -170,7 +157,7 @@ pipelines:
     subgraphs: []
     dependencies: {}
   pipelines/bronze-marketing-incremental:
-    name: bronze-marketing-incremental
+    name: demo_bronze-marketing-incremental
     description: ''
     author: nimbus@prophecy.io
     mode: batch
@@ -185,7 +172,7 @@ pipelines:
     subgraphs: []
     dependencies: {}
   pipelines/data-quality:
-    name: data-quality
+    name: demo_data-quality
     description: ''
     author: nimbus@prophecy.io
     mode: batch
@@ -202,7 +189,7 @@ pipelines:
     subgraphs: []
     dependencies: {}
   pipelines/migration_examples:
-    name: migration_examples
+    name: demo_migration_examples
     description: ''
     author: nimbus@prophecy.io
     mode: batch
@@ -760,7 +747,7 @@ datasets:
 templates: {}
 jobs:
   jobs/daily_incremental_refresh:
-    name: daily_incremental_refresh
+    name: demo_daily_incremental_refresh
     description: ''
     fabricUID: 7336
     scheduler:

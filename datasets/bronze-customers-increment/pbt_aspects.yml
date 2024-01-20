@@ -3,7 +3,7 @@ schema:
   type: struct
   fields:
   - name: customer_id
-    type: integer
+    type: long
     nullable: true
     metadata:
       description: ''

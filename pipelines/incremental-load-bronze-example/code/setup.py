@@ -1,13 +1,13 @@
 from setuptools import setup, find_packages
 setup(
-    name = 'incremental-load-bronze-example',
+    name = 'demo_incremental-load-bronze-example',
     version = '1.0',
     packages = find_packages(include = ('incrementalloadbronzeexample*', )) + ['prophecy_config_instances'],
     package_dir = {'prophecy_config_instances' : 'configs/resources/config'},
     package_data = {'prophecy_config_instances' : ['*.json', '*.py', '*.conf']},
     description = 'workflow',
     install_requires = [
-'prophecy-libs==1.7.0'],
+'prophecy-libs==1.7.4'],
     entry_points = {
 'console_scripts' : [
 'main = incrementalloadbronzeexample.pipeline:main'], },

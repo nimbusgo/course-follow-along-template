@@ -1,1 +1,1 @@
-from .migration_examples import *
+from .demo_migration_examples import *

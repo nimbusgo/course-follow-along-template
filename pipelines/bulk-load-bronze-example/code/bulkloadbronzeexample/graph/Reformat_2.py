@@ -11,7 +11,7 @@ def Reformat_2(spark: SparkSession, in0: DataFrame) -> DataFrame:
         col("customer_id"), 
         col("signup_date"), 
         coalesce(col("valid_from"), col("signup_date")).alias("valid_from"), 
-        expr("if(isnull(valid_ahead), NULL, valid_to)").alias("valid_to"), 
+        expr("if((valid_ahead IS NULL), NULL, valid_to)").alias("valid_to"), 
         col("valid_from").isNull().alias("is_original"), 
         col("valid_ahead").isNull().alias("is_current"), 
         col("customer_name"), 

@@ -162,7 +162,7 @@
             "type" : "struct",
             "fields" : [ {
               "name" : "customer_id",
-              "type" : "integer",
+              "type" : "long",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -338,7 +338,7 @@
             "type" : "struct",
             "fields" : [ {
               "name" : "customer_id",
-              "type" : "integer",
+              "type" : "long",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -576,7 +576,7 @@
         "columnsSelector" : [ "I_Nk5NDNAzxvlWCT0vpN5$$FLfEFvbBlOKSBF5g5NPHv##street_name", "I_Nk5NDNAzxvlWCT0vpN5$$FLfEFvbBlOKSBF5g5NPHv##signup_date", "I_Nk5NDNAzxvlWCT0vpN5$$FLfEFvbBlOKSBF5g5NPHv##customer_id", "I_Nk5NDNAzxvlWCT0vpN5$$FLfEFvbBlOKSBF5g5NPHv##city", "I_Nk5NDNAzxvlWCT0vpN5$$FLfEFvbBlOKSBF5g5NPHv##customer_name", "I_Nk5NDNAzxvlWCT0vpN5$$FLfEFvbBlOKSBF5g5NPHv##lon", "I_Nk5NDNAzxvlWCT0vpN5$$FLfEFvbBlOKSBF5g5NPHv##lat", "I_Nk5NDNAzxvlWCT0vpN5$$FLfEFvbBlOKSBF5g5NPHv##phone_number", "I_Nk5NDNAzxvlWCT0vpN5$$FLfEFvbBlOKSBF5g5NPHv##street_number", "I_Nk5NDNAzxvlWCT0vpN5$$FLfEFvbBlOKSBF5g5NPHv##postcode", "I_Nk5NDNAzxvlWCT0vpN5$$FLfEFvbBlOKSBF5g5NPHv##state", "I_Nk5NDNAzxvlWCT0vpN5$$FLfEFvbBlOKSBF5g5NPHv##unit" ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.0.7&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "gemId" : "gitUri=&subPath=&tag=0.0.7&projectSubscriptionProjectId=12654&path=gems/Reformat",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
